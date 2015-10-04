@@ -166,8 +166,8 @@ var projects = {
 			"dates" : "May 2014 - February 2015",
 			"description" : "Supervised the creation of a Store Locator website for the AXA Insurance advisors ",
 			"images" : [
-				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_store_loc.jpg",
-				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_france_map.jpg"
+				"https://raw.githubusercontent.com/bcandelon/frontend-nanodegree-resume/master/images/axa_store_loc.jpg",
+				"https://raw.githubusercontent.com/bcandelon/frontend-nanodegree-resume/master/images/axa_france_map.jpg"
 			]
 		},
 		{
@@ -175,8 +175,8 @@ var projects = {
 			"dates" : "November 2012 - May 2014",
 			"description" : "Specified the requirements for the creation of an Application Programming Interface (API) to be used by the mobile app \"Mon AXA\" and by the new version of the AXA.fr website.",
 			"images" : [
-				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_screen568x568.jpeg",
-				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_screen_2_568x568.jpeg"
+				"https://raw.githubusercontent.com/bcandelon/frontend-nanodegree-resume/master/images/axa_screen568x568.jpeg",
+				"https://raw.githubusercontent.com/bcandelon/frontend-nanodegree-resume/master/images/axa_screen_2_568x568.jpeg"
 			]
 		}		
 	]	
