@@ -141,26 +141,43 @@ if (work.length > 0) {
 	}
 }
 
-var education = {
-	"schools": [
+var education = [
+	{
+		"name" : "French Ministry of higher education",			
+		"degree" : "Lecturer qualification in Biochemistry and Molecular Biology",
+		"year" : 2008
+	},
+	{
+		"name" : "Paris Sud XI University",
+		"degree" : "Doctoral degree in Functional Genomics",
+		"year" : 2004
+	},
+	{
+		"name" : "Henri Poincaré University, Nancy",	
+		"degree" : "Master's degree in Science",
+		"year" : 2001
+	}
+];
+
+var projects = {
+	"work_projects"	: [
 		{
-			"name" : "French Ministry of higher education",			
-			"degree" : "Lecturer qualification in Biochemistry and Molecular Biology",
-			"year" : 2008
+			"title"  :"Creation of an Application Programming Interface (API)",
+			"dates" : "November 2012 - May 2014",
+			"description" : "Specified the requirements for the creation of an Application Programming Interface (API) to be used by the mobile app \"Mon AXA\" and by the new version of the AXA.fr website.",
+			"images" : [
+				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_screen568x568.jpeg",
+				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_screen_2_568x568.jpeg"
+			]
 		},
 		{
-			"name" : "Paris Sud XI University",
-			"degree" : "Doctoral degree in Functional Genomics",
-			"year" : 2004
-		},
-		{
-			"name" : "Henri Poincaré University, Nancy",	
-			"degree" : "Master's degree in Science",
-			"year" : 2001
+			"title" : "",
+			"dates" : "",
+			"description" : "",
+			"images" : ""
 		}
 	]
+	
 };
-
-$("#main").append(internationalizeButton);
 
 console.log("Fini");
