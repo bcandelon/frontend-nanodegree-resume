@@ -11,7 +11,7 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Calibri", sans-serif;
 }
 
 .clear-fix {
@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5ae23;
+  color: #AE0000;
   line-height: 48px;
   display: inline;
 }
@@ -100,7 +100,7 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #000000;
   display: none;
 }
 
@@ -109,7 +109,7 @@ a {
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #AE0000;
 }
 
 .white-text {
@@ -124,12 +124,12 @@ a {
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: #484848;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #BEBEBE;
 }
 
 .flex-box {
