@@ -162,6 +162,15 @@ var education = [
 var projects = {
 	"work_projects"	: [
 		{
+			"title" : "Creation of a Store Locator for the AXA insurance advisors",
+			"dates" : "May 2014 - February 2015",
+			"description" : "Supervised the creation of a Store Locator website for the AXA Insurance advisors ",
+			"images" : [
+				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_store_loc.jpg",
+				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_france_map.jpg"
+			]
+		},
+		{
 			"title"  :"Creation of an Application Programming Interface (API)",
 			"dates" : "November 2012 - May 2014",
 			"description" : "Specified the requirements for the creation of an Application Programming Interface (API) to be used by the mobile app \"Mon AXA\" and by the new version of the AXA.fr website.",
@@ -169,15 +178,26 @@ var projects = {
 				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_screen568x568.jpeg",
 				"https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/axa_screen_2_568x568.jpeg"
 			]
-		},
-		{
-			"title" : "",
-			"dates" : "",
-			"description" : "",
-			"images" : ""
-		}
-	]
-	
+		}		
+	]	
 };
+
+projects.display = function () {
+	for (project in projects.work_projects) {
+		$("#projects").append(HTMLprojectStart);
+		var formated_title = HTMLprojectTitle.replace("%data%",projects.work_projects[project].title);
+		$(".project-entry:last").append(formated_title);
+		var formated_dates = HTMLprojectDates.replace("%data%",projects.work_projects[project].dates);
+		$(".project-entry:last").append(formated_dates);
+		var formated_description = HTMLprojectDescription.replace("%data%",projects.work_projects[project].description);
+		$(".project-entry:last").append(formated_description);
+		for (image in projects.work_projects[project].images) {
+			var formated_image = HTMLprojectImage.replace("%data%",projects.work_projects[project].images[image]);
+			$(".project-entry:last").append(formated_image);
+		}
+	}
+}
+
+projects.display();
 
 console.log("Fini");
