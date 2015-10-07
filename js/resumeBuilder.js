@@ -8,8 +8,6 @@ function inName(aName) {
 	return CapitalizedName;
 }
 
-console.log(inName("Benjamin Candelon"));
-
 var name = "Benjamin Candelon";
 var formated_name = HTMLheaderName.replace("%data%", name);
 
@@ -29,7 +27,10 @@ var formated_cell_phone = HTMLmobile.replace("%data%", cell_phone);
 var email = "b.candelon@gmail.com";
 var formated_email = HTMLemail.replace("%data%", email);
 
-var photo_url = "https://github.com/bcandelon/frontend-nanodegree-resume/blob/master/images/Ben_crop_small.jpg";
+var photo_url = "https://raw.githubusercontent.com/bcandelon/frontend-nanodegree-resume/master/images/Ben_crop_small.jpg";
+var formated_photo_url = HTMLbioPic.replace("%data%", photo_url);
+
+$("#header").append(formated_photo_url);
 
 var contactinfo = [formated_address, formated_cell_phone, formated_email];
 
@@ -41,8 +42,8 @@ for (i = 0; i < contactinfo.length; i++) {
 var bio = {
 	"name" : "Benjamin CANDELON, <i>Ph. D.</i>",
 	"role" : "IT Project Manager",
-	"contactinfo" : {
-		"address" : "78 rue de Mulhouse - 68300 SAINT-LOUIS - FRANCE",
+	"contacts" : {
+		"location" : "78 rue de Mulhouse - 68300 SAINT-LOUIS - FRANCE",
 		"cell_phone" : "+33 6 50 71 80 40",
 		"email" : "b.candelon@gmail.com"
 	},	
@@ -145,17 +146,20 @@ var education = [
 	{
 		"name" : "French Ministry of higher education",			
 		"degree" : "Lecturer qualification in Biochemistry and Molecular Biology",
-		"year" : 2008
+		"year" : 2008,
+		"location" : "Paris"
 	},
 	{
 		"name" : "Paris Sud XI University",
 		"degree" : "Doctoral degree in Functional Genomics",
-		"year" : 2004
+		"year" : 2004,
+		"location": "Orsay"
 	},
 	{
 		"name" : "Henri Poincaré University, Nancy",	
 		"degree" : "Master's degree in Science",
-		"year" : 2001
+		"year" : 2001,
+		"location" : "Nancy"
 	}
 ];
 
@@ -199,5 +203,7 @@ projects.display = function () {
 }
 
 projects.display();
+
+$("#mapDiv").append(googleMap);
 
 console.log("Fini");
